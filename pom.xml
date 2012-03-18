@@ -1,5 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<repositories>
+		<repository>
+			<id>typesafe</id>
+			<url>http://repo.typesafe.com/typesafe/maven-snapshots/</url>
+		</repository>
+	</repositories>
+		
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ostendorf</groupId>
