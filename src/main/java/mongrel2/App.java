@@ -44,14 +44,14 @@ public class App {
 		final Package p = App.class.getPackage();
 		final String appname = p.getSpecificationTitle();
 		final String versionMaven = p.getSpecificationVersion();
-		final String[] version = p.getImplementationVersion().split(" ", 2);
+		final String version = p.getImplementationVersion();
 
 		final int[] v = ZmqVersion.version();
 
 		System.out.printf("%s version:      %s.%s.%s%n", "ZeroMQ", v[0], v[1], v[2]);
 		System.out.printf("%s version:      %s%n", appname, versionMaven);
-		System.out.printf("%s build time:   %s%n", appname, version[1]);
-		System.out.printf("%s build commit: %s%n", appname, version[0]);
+		System.out.printf("%s build time:   %s%n", appname, version);
+//		System.out.printf("%s build commit: %s%n", appname, version[0]);
 
 	}
 

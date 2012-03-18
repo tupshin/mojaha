@@ -130,6 +130,7 @@ public class BaseHttpRequest extends Request {
 	}
 
 	public StringBuffer getRequestURL() {
+		if (this.requestURL == null) return new StringBuffer();
 		return new StringBuffer(this.requestURL);
 	}
 
@@ -188,7 +189,10 @@ public class BaseHttpRequest extends Request {
 		// calculate fields
 
 		// scheme
-		this.scheme = getProtocol().split("/")[0].toLowerCase();
+		String protocol = getProtocol();
+		if (protocol == null) return;
+		
+		this.scheme = protocol.split("/")[0].toLowerCase();
 
 		// secure
 		this.secure = (getScheme().equals("https"));

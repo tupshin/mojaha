@@ -127,8 +127,8 @@ public class Request {
 		// UUID ID PATH SIZE:HEADERS,SIZE:BODY,
 
 		try {
-			System.out.write(raw);
-			System.out.println();
+			//System.out.write(raw);
+			//System.out.println();
 		} catch (final Exception x) {
 			// ignore
 		}

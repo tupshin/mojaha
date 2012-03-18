@@ -38,6 +38,7 @@ public class Response {
 
 	/**
 	 * Called before a response is dispatched back to Mongrel2.
+	 * @throws IOException 
 	 */
 	protected void transform() throws IOException {
 		// default implementation does nothing
